@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+
+# Testes
+.pytest_cache/
+
+# Logs e Telemetria Bruta
+*.log
+*.evtx
+*.pcap
+
+# IDE
+.vscode/
+.idea/
