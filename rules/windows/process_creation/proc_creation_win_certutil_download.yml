@@ -1,0 +1,28 @@
+﻿title: Suspicious File Download via Certutil
+id: 5a8a4f47-b3f9-4b6d-a3d2-386d634be9f8
+status: production
+description: Detecta o uso do utilitario nativo certutil.exe para download de artefatos remotos via linha de comando.
+references:
+  - https://lolbas-project.github.io/lolbas/Binaries/Certutil/
+author: SOC Detection Engineering
+date: 2026-11-05
+tags:
+  - attack.defense_evasion
+  - attack.t1105
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_img:
+    Image|endswith: '\certutil.exe'
+    OriginalFileName: 'CertUtil.exe'
+  selection_flags:
+    CommandLine|contains:
+      - ' -urlcache '
+      - ' /urlcache '
+      - ' -split '
+      - ' /split '
+  condition: selection_img and selection_flags
+falsepositives:
+  - Scripts administrativos internos de validacao de listas CRL com URLs corporativas.
+level: high
