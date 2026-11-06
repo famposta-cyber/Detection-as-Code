@@ -43,7 +43,7 @@ def generate_layer():
     layer_payload = {
         "name": "SOC Detection-as-Code Coverage",
         "versions": {
-            "attack": "15",
+            "attack": "20",
             "navigator": "5.0.0",
             "layer": "4.5"
         },
