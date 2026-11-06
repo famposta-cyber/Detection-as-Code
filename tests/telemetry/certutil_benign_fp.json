@@ -1,0 +1,9 @@
+{
+  "EventID": 1,
+  "Channel": "Microsoft-Windows-Sysmon/Operational",
+  "Image": "C:\\Windows\\System32\\certutil.exe",
+  "OriginalFileName": "CertUtil.exe",
+  "CommandLine": "certutil.exe -dump local_cert.crt",
+  "User": "CORP\\administrator",
+  "ProcessId": 5112
+}
