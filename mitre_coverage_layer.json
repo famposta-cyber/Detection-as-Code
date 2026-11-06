@@ -1,0 +1,27 @@
+{
+  "name": "SOC Detection-as-Code Coverage",
+  "versions": {
+    "attack": "15",
+    "navigator": "5.0.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Camada de cobertura gerada automaticamente pelo pipeline de Detection Engineering",
+  "gradient": {
+    "colors": [
+      "#d1e5f0",
+      "#67a9cf",
+      "#2166ac"
+    ],
+    "minValue": 1,
+    "maxValue": 1
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "comment": "Regras ativas (1): Suspicious File Download via Certutil",
+      "enabled": true
+    }
+  ]
+}
