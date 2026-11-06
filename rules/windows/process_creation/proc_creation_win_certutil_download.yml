@@ -1,6 +1,6 @@
 ﻿title: Suspicious File Download via Certutil
 id: 5a8a4f47-b3f9-4b6d-a3d2-386d634be9f8
-status: production
+status: stable
 description: Detecta o uso do utilitario nativo certutil.exe para download de artefatos remotos via linha de comando.
 references:
   - https://lolbas-project.github.io/lolbas/Binaries/Certutil/
